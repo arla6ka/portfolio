@@ -69,7 +69,7 @@ export const DATA = {
       start: "September 2024",
       end: "Present",
       description:
-        "Managed network infrastructure for 130+ students, maintaining 99% uptime. Built a request tracking site with React, Node.js, and MongoDB, processing 10+ submissions weekly. Resolved hardware and software issues efficiently, streamlining technical support processes.",
+        "Built a request tracking system with MERN, adding automated notifications for 5+ weekly submissions. Managed network infrastructure for 130+ students, ensuring 99.9% uptime with monitoring and security. Resolved 25+ hardware and software issues, leveraging remote tools to improve resolution speed",
     },
     {
       company: "Napkins Magazine",
@@ -81,7 +81,7 @@ export const DATA = {
       start: "June 2023",
       end: "August 2023",
       description:
-        "Optimized website using Next.js and Tailwind, reducing load times by 35% and enhancing user engagement. Streamlined content updates by 40% with GraphQL and Sanity.io integration. Maintained 99.9% uptime via Vercel deployment, leveraging automated scaling and CDN.",
+        "Reduced load times by 35% through image optimization, utilizing Next.js and Tailwind. Integrated RESTful APIs for seamless article updates and multimedia, boosting reader engagement. Developed a system for managing art reviews, streamlining submissions and improving editorial efficiency. Enhanced article visibility with server-side rendering, raising organic traffic by 20%",
     },
     {
       company: "nFactorial Incubator Web AI Bootcamp",
@@ -93,7 +93,7 @@ export const DATA = {
       start: "June 2024",
       end: "August 2024",
       description:
-        "Selected for Central Asia’s most competitive bootcamp (3% acceptance rate). Developed full-stack applications using the MERN stack, TypeScript, and Next.js. Integrated Hugging Face models and vector databases to optimize AI-driven search and personalization. Monitored app performance with Google Analytics and deployed services using Docker for scalability.",
+        "Selected for Central Asia’s top bootcamp (3% acceptance rate) focused on web and AI technologies. Built full-stack apps with MERN, TypeScript, Tailwind, Next.js, and RESTful APIs. Integrated Hugging Face models with Pinecone vector database, optimizing model performance and retrieval. Deployed using Docker and CI/CD pipelines, optimizing performance with Google Analytics",
     },
     {
       company: "Globerce Capital",
@@ -105,7 +105,7 @@ export const DATA = {
       start: "January 2019",
       end: "April 2019",
       description:
-        "Optimized a fintech site with React, improving load speed by 40% using code-splitting and lazy loading. Implemented real-time search, filtering, and pagination with Redux for efficient state management. Enhanced SEO and accessibility with SSR and semantic HTML, increasing traffic by 25%.",
+        "Optimized a fintech website with React, reducing load time by 40% through code-splitting and lazy loading. Developed an article management system using Redux for real-time updates and dynamic filtering of content. Created a custom chart with D3.js to visualize article performance metrics, enhancing editorial insights. Enhanced post visibility with structured data and mobile optimization, increasing organic traffic by 25%.",
     },
     
   ],
@@ -137,126 +137,93 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Bazaar AI",
+      href: "https://thebazaar.me",
+      dates: "June 2024 - August 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Bazaar - is an innovative service that helps users to conduct cross—platform product search using artificial intelligence.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "MERN Stack",
+        "OpenAI",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Docker",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://thebazaar.me",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "./bazaar.mov",
     },
+    
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "AI Applicant Tracking System",
+      href: "",
+      dates: "Jule 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Developed an AI applicant tracking system for the biggest IT school in Central Asia to manage their hiring process.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "MERN",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Google API",
+        "Gemini",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
+        
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "./nfactorial.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Course platform with AI Assistant",
+      href: "",
+      dates: "June 2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Developed an course platform for the biggest college application consulting company in Central Asia with AI assistant.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "MERN",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Google API",
+        "Gemini",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
+        
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "./impact1.mp4",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Vindex",
+      href: "",
+      dates: "September 2023 - May 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Developed a comprehensive technology solution to monitor the entire pregnancy process, focusing on infant mortality prevention.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Flutter",
+        "Firebase",
+        "Arduino",
+        "Gemini"
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
+        
+        
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/vindex.png",
+      video: "",
     },
   ],
   hackathons: [
