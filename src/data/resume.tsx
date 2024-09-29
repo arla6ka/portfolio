@@ -8,7 +8,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer focused on full-stack development. Minerva University freshman with startup and design experience.",
+    "Full-Stack Developer & Designer, studying at the most selective and innovative university in the world.",
   summary:"In high school, I got into the most prestigious tech bootcamp in Central Asia, where I dived into full-stack development and AI. Now, as a freshman at Minerva University — the most selective and innovative university in the world — I’m surrounded by inspiring peers and big ideas. I love building projects that make an impact, whether it's AI tools or making websites, and I'm always eager for the next challenge."
   ,avatarUrl: "/me.png",
   skills: [
@@ -59,18 +59,7 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Minerva University",
-      href: "https://www.minerva.edu",
-      badges: [],
-      location: "On-site",
-      title: "IT Support Assistant",
-      logoUrl: "/minerva.png",
-      start: "September 2024",
-      end: "Present",
-      description:
-        "Built a request tracking system with MERN, adding automated notifications for 5+ weekly submissions. Managed network infrastructure for 130+ students, ensuring 99.9% uptime with monitoring and security. Resolved 25+ hardware and software issues, leveraging remote tools to improve resolution speed",
-    },
+    
     {
       company: "Napkins Magazine",
       badges: [],
@@ -78,10 +67,22 @@ export const DATA = {
       location: "On-site",
       title: "Web Developer",
       logoUrl: "/napkins.png",
-      start: "June 2023",
-      end: "August 2023",
+      start: "August 2024",
+      end: "Present",
       description:
         "Reduced load times by 35% through image optimization, utilizing Next.js and Tailwind. Integrated RESTful APIs for seamless article updates and multimedia, boosting reader engagement. Developed a system for managing art reviews, streamlining submissions and improving editorial efficiency. Enhanced article visibility with server-side rendering, raising organic traffic by 20%",
+    },
+    {
+      company: "Minerva University",
+      href: "https://www.minerva.edu",
+      badges: [],
+      location: "On-site",
+      title: "IT Support Assistant",
+      logoUrl: "/minerva.png",
+      start: "August 2024",
+      end: "Present",
+      description:
+        "Built a request tracking system with MERN, adding automated notifications for 5+ weekly submissions. Managed network infrastructure for 130+ students, ensuring 99.9% uptime with monitoring and security. Resolved 25+ hardware and software issues, leveraging remote tools to improve resolution speed",
     },
     {
       company: "nFactorial Incubator Web AI Bootcamp",
@@ -102,8 +103,8 @@ export const DATA = {
       location: "Almaty, Kazakhstan",
       title: "Web Developer Intern",
       logoUrl: "/glob.jpeg",
-      start: "January 2019",
-      end: "April 2019",
+      start: "June 2023",
+      end: "August 2023",
       description:
         "Optimized a fintech website with React, reducing load time by 40% through code-splitting and lazy loading. Developed an article management system using Redux for real-time updates and dynamic filtering of content. Created a custom chart with D3.js to visualize article performance metrics, enhancing editorial insights. Enhanced post visibility with structured data and mobile optimization, increasing organic traffic by 25%.",
     },
