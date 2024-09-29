@@ -28,7 +28,7 @@ const LaunchAnimation: React.FC<LaunchAnimationProps> = ({ onAnimationComplete }
     const timer = setTimeout(() => {
       setShowEmoji(false);
       onAnimationComplete();
-    }, 2000); // Анимация длится 3 секунды
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, [onAnimationComplete]);
