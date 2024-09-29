@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface Video {
@@ -10,6 +10,18 @@ interface Video {
 
 const InteractiveVideoSquares: React.FC = () => {
   const [hoveredVideo, setHoveredVideo] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   const videos: Video[] = [
     { id: 1, src: "./1.mp4" },
@@ -32,18 +44,18 @@ const InteractiveVideoSquares: React.FC = () => {
               width: '100%',
               paddingBottom: '125%', // 1080:1350 aspect ratio
             }}
-            whileHover={{
+            whileHover={!isMobile ? {
               scale: 1.05,
               rotateY: 15,
               z: 50,
-            }}
+            } : {}}
             transition={{
               type: "spring",
               stiffness: 300,
               damping: 10
             }}
-            onHoverStart={() => setHoveredVideo(video.id)}
-            onHoverEnd={() => setHoveredVideo(null)}
+            onHoverStart={() => !isMobile && setHoveredVideo(video.id)}
+            onHoverEnd={() => !isMobile && setHoveredVideo(null)}
           >
             <video
               src={video.src}
@@ -51,12 +63,14 @@ const InteractiveVideoSquares: React.FC = () => {
               loop
               muted
               playsInline
-              autoPlay={hoveredVideo === video.id}
-              onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
+              autoPlay={isMobile || hoveredVideo === video.id}
+              onMouseEnter={(e) => !isMobile && (e.target as HTMLVideoElement).play()}
               onMouseLeave={(e) => {
-                const videoElement = e.target as HTMLVideoElement;
-                videoElement.pause();
-                videoElement.currentTime = 0;
+                if (!isMobile) {
+                  const videoElement = e.target as HTMLVideoElement;
+                  videoElement.pause();
+                  videoElement.currentTime = 0;
+                }
               }}
             />
           </motion.div>
