@@ -130,7 +130,7 @@ export const DATA = {
     {
       school: "Jusan Singularity",
       href: "https://singularity.camp/",
-      degree: "Java IT Camp",
+      degree: "Java IT BootCamp",
       logoUrl: "/singularity.jpeg",
       start: "June 2024",
       end: "August 2024",
