@@ -70,7 +70,7 @@ export const DATA = {
       start: "August 2024",
       end: "Present",
       description:
-        "Reduced load times by 35% through image optimization, utilizing Next.js and Tailwind. Integrated RESTful APIs for seamless article updates and multimedia, boosting reader engagement. Developed a system for managing art reviews, streamlining submissions and improving editorial efficiency. Enhanced article visibility with server-side rendering, raising organic traffic by 20%",
+        "Developed modular and reusable UI components using React, Next.js, and Tailwind CSS, improving content management workflows. Enhanced application performance with static site generation (SSG) and server-side rendering (SSR), reducing time-to-interactive by 30% for high-traffic pages. Optimized data retrieval processes in MongoDB for over 200 multimedia art articles, ensuring efficient access and improved performance. Implemented advanced state management using Context API and Redux Toolkit, reducing bundle size by 20% and improving scalability.",
     },
     {
       company: "Minerva University",
@@ -94,7 +94,7 @@ export const DATA = {
       start: "June 2024",
       end: "August 2024",
       description:
-        "Selected for Central Asia’s top bootcamp (3% acceptance rate) focused on web and AI technologies. Built full-stack apps with MERN, TypeScript, Tailwind, Next.js, and RESTful APIs. Integrated Hugging Face models with Pinecone vector database, optimizing model performance and retrieval. Deployed using Docker and CI/CD pipelines, optimizing performance with Google Analytics",
+        "Architected and deployed full-stack applications using the MERN stack, TypeScript, and Tailwind CSS, emphasizing modular and testable design patterns. Containerized applications with Docker, automating CI/CD pipelines for consistent development and production environments. Optimized MongoDB queries through indexing and aggregation pipelines to enhance real-time data processing for high-traffic applications. Secured application layers with OAuth 2.0 and JWT-based authentication, implementing role-based access control (RBAC) across RESTful endpoints.",
     },
     {
       company: "Globerce Capital",
@@ -106,7 +106,7 @@ export const DATA = {
       start: "June 2023",
       end: "August 2023",
       description:
-        "Optimized a fintech website with React, reducing load time by 40% through code-splitting and lazy loading. Developed an article management system using Redux for real-time updates and dynamic filtering of content. Created a custom chart with D3.js to visualize article performance metrics, enhancing editorial insights. Enhanced post visibility with structured data and mobile optimization, increasing organic traffic by 25%.",
+        "Developed interactive UI components for a fintech platform using React, improving the display and management of 50+ financial reports. Streamlined data flow with Redux, employing Redux Saga to handle side effects, enhancing real-time data synchronization for 100+ concurrent users. Built data visualization dashboards with D3.js, generating 10+ dynamic charts to deliver actionable insights for clients, enhancing data-driven decision making. Applied code-splitting, memoization, and lazy loading using React.memo, resulting in a 35% reduction in initial page load times for key landing pages.",
     },
     
   ],
