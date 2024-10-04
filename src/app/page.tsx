@@ -1,5 +1,5 @@
 'use client'
-
+import { Analytics } from "@vercel/analytics/react"
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HackathonCard } from "@/components/hackathon-card";
@@ -71,9 +71,11 @@ export default function Page() {
 
   return (
     <>
-      <LaunchAnimation onAnimationComplete={handleAnimationComplete} />
+       <Analytics/>  
+    <LaunchAnimation onAnimationComplete={handleAnimationComplete} />
       {showContent && (
         <main className="flex flex-col min-h-[100dvh] space-y-10">
+          
           <section id="hero">
           <Navbar />
             <div className="mx-auto w-full max-w-2xl space-y-8">
@@ -232,6 +234,7 @@ export default function Page() {
               </BlurFade>
             </div>
           </section>
+          
         </main>
       )}
     </>
